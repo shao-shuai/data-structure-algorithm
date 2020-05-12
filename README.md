@@ -5,7 +5,7 @@
 
 ### Python resources:
 
-- [Data structure: very good tutorial for data structure in Python
+- [Data structure](https://www.youtube.com/watch?v=lVFnq4zbs-g&list=PL5tcWHG-UPH112e7AN7C-fwDVPVrt0wpV): very good tutorial for data structure in Python
 
 ### Github resources:
 
