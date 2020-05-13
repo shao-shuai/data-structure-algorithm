@@ -12,3 +12,18 @@
 - [How to teach incremental, atomic commits?](https://education.github.community/t/how-to-teach-incremental-atomic-commits/28669)
 - 
 
+### Leetcode question
+
+#### Tree
+
+102 [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
+
+110 [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)	**review**
+
+199 [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)
+
+107 [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)
+
+103 [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)
+
+- 

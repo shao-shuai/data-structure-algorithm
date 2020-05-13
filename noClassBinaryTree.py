@@ -1,3 +1,5 @@
+from time import time
+
 class Node():
 	def __init__(self, item):
 		self.value = item
@@ -9,6 +11,18 @@ tree.left = Node(9)
 tree.right = Node(20)
 tree.right.left = Node(15)
 tree.right.right = Node(7)
+
+def height(root):
+	if root is None:
+		return -1
+
+	left_height = height(root.left)
+	right_height = height(root.right)
+
+	print(left_height)
+	print(right_height)
+
+	return 1 + max(left_height, right_height)
 
 def bfs(root):
 	if root is None:
@@ -30,4 +44,45 @@ def bfs(root):
 
 	return traversal
 
-print(bfs(tree))
+def size_rur(root):
+	if root is None:
+		return 0
+
+	left = size_rur(root.left)
+	right = size_rur(root.right)
+
+	return 1+ left + right
+
+def size(root):
+	if root is None:
+		return 0
+
+	stack = [ ]
+	count = 0
+	stack.append(root)
+
+	while len(stack):
+
+		node = stack.pop()
+		count += 1
+
+		if node.left:
+			stack.append(node.left)
+		if node.right:
+			stack.append(node.right)
+
+	return count
+
+
+# start_time = time()
+# print(bfs(tree))
+# print((f'Crawled job in {time() - start_time} seconds'))
+
+# a = [3,9,20,15,7]
+
+# s_time = time()
+# print(''.join([str(i) + "-" for i in a]))
+# print((f'Crawled job in {time() - s_time} seconds'))
+
+# print(height(tree))
+print(size_rur(tree))
