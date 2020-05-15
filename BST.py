@@ -47,6 +47,14 @@ class BST():
 		if data == cur_node.data:
 			return True
 
+	def inorder(self, node, traversal):
+		if node is None:
+			return
+		self.inorder(node.left, traversal)
+		traversal.append(node.data)
+		self.inorder(node.right, traversal)
+		return traversal
+
 	def levelorder(self, node):
 		queue = [ ]
 		traversal = [ ]
@@ -68,6 +76,8 @@ class BST():
 	def printTree(self):
 		return self.levelorder(self.root)
 
+	
+
 
 
 bst = BST()
@@ -77,8 +87,7 @@ bst.insert(8)
 bst.insert(5)
 bst.insert(10)
 
-print(bst.printTree())
-
+print(bst.inorder(bst.root, []))
 
 
 

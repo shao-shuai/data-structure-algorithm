@@ -26,4 +26,34 @@
 
 103 [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)
 
-- 
+653 Two Sum IV - Input is a BST
+
+- inorder traversal would return a sorted list, use 2 points from head and tail to find the sum
+
+100 Same Tree
+
+- preorder
+
+
+
+#### Linked list
+
+19 Remove Nth Node From End of List
+
+- Two pointers
+
+24 Swap Nodes in Pairs
+
+- Still 2 pointers
+
+203 Remove Linked List Elements
+
+#### Stack
+
+1047 Remove All Adjacent Duplicates In String
+
+1290 Convert Binary Number in a Linked List to Integer
+
+- stack + linked list
+
+92 Reverse Linked List II

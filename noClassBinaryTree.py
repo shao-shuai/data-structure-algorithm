@@ -73,16 +73,14 @@ def size(root):
 
 	return count
 
+# Inorder traversal
+def inorder(node, traversal):
+	if node is None:
+		return
+	inorder(node.left, traversal)
+	traversal.append(node.value)
+	inorder(node.right, traversal)
 
-# start_time = time()
-# print(bfs(tree))
-# print((f'Crawled job in {time() - start_time} seconds'))
+	return traversal
 
-# a = [3,9,20,15,7]
-
-# s_time = time()
-# print(''.join([str(i) + "-" for i in a]))
-# print((f'Crawled job in {time() - s_time} seconds'))
-
-# print(height(tree))
-print(size_rur(tree))
+print(inorder(tree, []))
