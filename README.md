@@ -48,6 +48,12 @@
 
 203 Remove Linked List Elements
 
+160 Intersection of Two Linked Lists
+
+- Brute force
+- Hash table
+- Two pointers
+
 #### Stack
 
 1047 Remove All Adjacent Duplicates In String

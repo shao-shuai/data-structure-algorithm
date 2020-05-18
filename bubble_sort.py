@@ -23,3 +23,7 @@ for outer in range(len(arr) - 1):
 
 
 # Insert sort
+
+print(help(max))
+
+
